@@ -12,7 +12,7 @@ function UpdateUser(){
   let [age, setAge] = useState(0)
 
   useEffect(()=>{
-    axios.get('http://localhost:5000/getUser/' + id)
+    axios.get('http://localhost:5000/UsersInfo/getUser/' + id)
     .then(result => {
       console.log(result)
 
@@ -26,10 +26,10 @@ function UpdateUser(){
   function Update(e){
     e.preventDefault()
     
-    axios.put('http://localhost:5000/updateUser/' + id, {name, email, age})
+    axios.put('http://localhost:5000/UsersInfo/updateUser/' + id, {name, email, age})
     .then(result => {
       console.log(result)
-      navigate('/')
+      navigate('/UsersInfo')
     })
     .catch(err => console.log(err))
   }

@@ -10,14 +10,14 @@ function Users(){
 
   //Reading users
   useEffect(()=>{
-    axios.get('http://localhost:5000')
+    axios.get('http://localhost:5000/UsersInfo')
     .then(result => setUsers(result.data))
     .catch(err => console.log(err))
   },[])
 
   //Deleting a User
   function handleDelete(id){
-    axios.delete('http://localhost:5000/deleteUser/'+id)
+    axios.delete('http://localhost:5000/UsersInfo/deleteUser/'+id)
     .then(res => {
       console.log(res)
       window.location.reload()

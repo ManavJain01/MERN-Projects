@@ -19,21 +19,21 @@ mongoose.connect('mongodb://localhost:27017/UsersInfo')
 
 //CRUD OPERATIONS
 // Creating User
-app.post("/createUser", (req, res)=>{
+app.post("/UsersInfo/createUser", (req, res)=>{
   UserModel.create(req.body)
   .then(users=> res.json(users))
   .catch(err=> res.json(err))
 })
 
 // Reading User
-app.get('/', (req, res)=>{
+app.get('/UsersInfo', (req, res)=>{
   UserModel.find({})
   .then(users => res.json(users))
   .catch(err => res.json(err))
 })
 
 // Updating User
-app.get('/getUser/:id', (req, res) => {
+app.get('/UsersInfo/getUser/:id', (req, res) => {
   const id = req.params.id;
 
   UserModel.findById({_id:id})
@@ -41,7 +41,7 @@ app.get('/getUser/:id', (req, res) => {
   .catch(err => res.json(err))
 })
 
-app.put('/updateUser/:id', (req, res) => {
+app.put('/UsersInfo/updateUser/:id', (req, res) => {
   const id = req.params.id;
   UserModel.findByIdAndUpdate({_id: id}, {
     name: req.body.name,
@@ -53,7 +53,7 @@ app.put('/updateUser/:id', (req, res) => {
 })
 
 // Deleting User
-app.delete('/deleteUser/:id', (req, res) => {
+app.delete('/UsersInfo/deleteUser/:id', (req, res) => {
   const id = req.params.id;
   UserModel.findByIdAndDelete({_id: id})
   .then(res => res.json(res))

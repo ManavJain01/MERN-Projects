@@ -11,10 +11,10 @@ function CreateUser(){
 
   function Submit(e){
     e.preventDefault();
-    axios.post('http://localhost:5000/createUser', {name, email, age})
+    axios.post('http://localhost:5000/UsersInfo/createUser', {name, email, age})
     .then(result => {
       console.log(result)
-      navigate('/')
+      navigate('/UsersInfo')
     })
     .catch(err => console.log(err))
   }
