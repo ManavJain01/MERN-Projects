@@ -21,7 +21,7 @@ function CreateUser(){
   }
 
   return (
-    <div className="flex h-[100vh] bg-blue-400 justify-center items-center">
+    <div className="flex h-[60vh] bg-blue-400 justify-center items-center">
       <div className="w-[45rem] bg-white rounded p-3">
         <form onSubmit={Submit} className="flex flex-col gap-5">
           <h2 className="font-semibold text-2xl">Add User</h2>

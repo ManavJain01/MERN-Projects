@@ -1,7 +1,9 @@
+// No Use of this jsx file
+
 // Importing React Packages
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-// IMporting Main Files
+// Importing Main Files
 import MainPage from './Main File/components/Index'
 
 // My Projects Imports-----------------------------------------------------------
@@ -10,7 +12,7 @@ import UsersInfo from './my-projects/Users Info/Users'
 import CreateUser from './my-projects/Users Info/CreateUser'
 import UpdateUser from './my-projects/Users Info/UpdateUser'
 
-// IMporting practice
+// Importing practice
 import Practice from './my-projects/practice/practice'
 import Testing from './my-projects/practice/testing'
 

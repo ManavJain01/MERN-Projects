@@ -28,7 +28,7 @@ function Users(){
   }
 
   return (
-    <div className="flex h-[100vh] bg-blue-500 justify-center items-center">
+    <div className="flex h-[60vh] bg-blue-500 justify-center items-center">
       <div className="w-[45rem] bg-white flex flex-col gap-5 rounded p-3">
         {/* //Creating a new User */}
         <Link to="/create" className="bg-blue-800 text-white text-center py-1 px-5 rounded-lg">Add +</Link>
