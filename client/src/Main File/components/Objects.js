@@ -1,5 +1,6 @@
 // Importing Images
 import UsersInfo from '../Images/Users Info.png'
+import StudentDetails from '../Images/Student Details.png';
 import Dismefa from '../Images/Dismefa.png'
 import webStreaming from '../Images/web streaming.png'
 
@@ -25,8 +26,15 @@ const object = [
   {
     Link:"/UsersInfo",
     Img: UsersInfo,
-    p1:"MERN Project",
+    p1:"MERN Project with CRUD Operations",
     p2:"User Information",
+    id:`project${i++}`
+  },
+  {
+    Link:"/StudentDetails",
+    Img: StudentDetails,
+    p1:"MERN Project with Search functionality",
+    p2:"Student Details",
     id:`project${i++}`
   },
 ]

@@ -1,6 +1,5 @@
 // Importing local files
 const { createUser, readUser, getUser, updateUser, deleteUser } = require('../controllers/UserInfo')
-const UserModel = require('../models/UserInfo')
 
 // Accessing Express and MongoDB Packages
 const express = require('express')

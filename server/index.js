@@ -1,5 +1,6 @@
 // Importing local files
 const userInfo_routes = require('./routes/UserInfo')
+const studentDetails_routes = require('./routes/StudentDetails')
 const practice_routes = require('./routes/practice')
 
 // Accessing Express and MongoDB Packages
@@ -20,6 +21,7 @@ mongoose.connect('mongodb://localhost:27017/MinorProjects')
 
 // // middleware or to set router
 app.use("/UsersInfo", userInfo_routes)
+app.use("/StudentDetails", studentDetails_routes)
 app.use("/practice", practice_routes)
 
 

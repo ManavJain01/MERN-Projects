@@ -13,6 +13,9 @@ import UsersInfo from './my-projects/Users Info/Users'
 import CreateUser from './my-projects/Users Info/CreateUser'
 import UpdateUser from './my-projects/Users Info/UpdateUser'
 
+// Importing Student Details Files
+import StudentDetails from './my-projects/Student Details/StudentDetails'
+
 // Importing practice
 import Practice from './my-projects/practice/practice'
 import Testing from './my-projects/practice/testing'
@@ -40,6 +43,11 @@ const router = createBrowserRouter([
       {
         path: "/update/:id",
         element : <UpdateUser />
+      },
+      // /* Users Info */
+      {
+        path: "/StudentDetails",
+        element : <StudentDetails />
       },
       // /* practice */
       {
