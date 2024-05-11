@@ -13,6 +13,8 @@ function Users(){
     axios.get('http://localhost:5000/UsersInfo')
     .then(result => setUsers(result.data))
     .catch(err => console.log(err))
+
+    console.log(users);
   },[])
 
   //Deleting a User

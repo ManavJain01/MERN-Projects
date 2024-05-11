@@ -11,6 +11,7 @@ function CreateUser(){
 
   function Submit(e){
     e.preventDefault();
+    console.log("going");
     axios.post('http://localhost:5000/UsersInfo/createUser', {name, email, age})
     .then(result => {
       console.log(result)
