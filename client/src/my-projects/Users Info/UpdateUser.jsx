@@ -26,7 +26,7 @@ function UpdateUser(){
   function Update(e){
     e.preventDefault()
     
-    axios.put('http://localhost:5000/UsersInfo/updateUser/' + id, {name, email, age})
+    axios.put(`${import.meta.env.VITE_SERVER_LOCATION}/UsersInfo/updateUser/` + id, {name, email, age})
     .then(result => {
       console.log(result)
       navigate('/UsersInfo')

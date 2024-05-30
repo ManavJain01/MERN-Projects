@@ -10,7 +10,7 @@ function Users(){
 
   //Reading users
   useEffect(()=>{
-    axios.get('http://localhost:5000/UsersInfo')
+    axios.get(`${import.meta.env.VITE_SERVER_LOCATION}/UsersInfo`)
     .then(result => setUsers(result.data))
     .catch(err => console.log(err))
 
@@ -19,7 +19,7 @@ function Users(){
 
   //Deleting a User
   function handleDelete(id){
-    axios.delete('http://localhost:5000/UsersInfo/deleteUser/'+id)
+    axios.delete(`${import.meta.env.VITE_SERVER_LOCATION}/UsersInfo/deleteUser/`+id)
     .then(res => {
       console.log(res)
       window.location.reload()

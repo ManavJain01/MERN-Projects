@@ -8,7 +8,7 @@ function StudentDetails(){
 
   useEffect(() => {
     try {
-      axios.get("http://localhost:5000/StudentDetails")
+      axios.get(`${import.meta.env.VITE_SERVER_LOCATION}/StudentDetails`)
       .then(users => setUsers(users.data.data))
       .catch(err => alert(err))
     } catch (error) {

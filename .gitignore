@@ -23,6 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+# Hide Config File
+.env
 
 # my local files
 commands

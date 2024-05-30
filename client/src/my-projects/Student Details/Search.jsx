@@ -11,7 +11,7 @@ function Search(){
     event.preventDefault();
 
     if(name.length > 0) try {
-      axios.post("http://localhost:5000/StudentDetails/user/findOne/" + name)
+      axios.post(`${import.meta.env.VITE_SERVER_LOCATION}/StudentDetails/user/findOne/` + name)
       .then(res => {
         if (res.data.data == "User not found") {
           alert("User not Found")

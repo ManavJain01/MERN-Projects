@@ -7,14 +7,19 @@ const practice_routes = require('./routes/practice')
 const express = require('express')
 const mongoose = require('mongoose')
 
+// Importing env file
+require("dotenv").config();
+
 const cors = require('cors')
 const app = express()
 app.use(cors())
 app.use(express.json())
 
+const mongoURI = process.env.MONGODB_URI
+
 
 // Connecting MongoDB DataBase
-mongoose.connect('mongodb://localhost:27017/MinorProjects')
+mongoose.connect(mongoURI)
 .then(()=>console.log("MongoDB Connected."))
 .catch(err => console.log("Mongo Error" + err))
 

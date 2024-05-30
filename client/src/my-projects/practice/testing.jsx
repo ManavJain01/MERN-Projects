@@ -6,7 +6,7 @@ import axios from 'axios'
 
 function testing(){
   useEffect(()=>{
-    axios.get('http://localhost:5000/practice/testing')
+    axios.get(`${import.meta.env.VITE_SERVER_LOCATION}/practice/testing`)
     .then(result => console.log(result))
     .catch(err => console.log(err))
 
