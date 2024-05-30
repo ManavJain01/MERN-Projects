@@ -1,12 +1,12 @@
-#project1 div, #project2 div{
+#project1 div, #project2 div, #project3 div{
   justify-content: space-between;
 }
 
-#project3 p span, #project4 p span{
+#project4 p span, #project5 p span{
   padding: 0 10px;
 }
 
-#project4 img{
+#project5 img{
   height: 100%;
   width: 100%;
 }

@@ -19,7 +19,7 @@ mongoose.connect('mongodb://localhost:27017/MinorProjects')
 .catch(err => console.log("Mongo Error" + err))
 
 
-// // middleware or to set router
+// middleware or to set router
 app.use("/UsersInfo", userInfo_routes)
 app.use("/StudentDetails", studentDetails_routes)
 app.use("/practice", practice_routes)
