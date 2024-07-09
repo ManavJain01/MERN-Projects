@@ -3,7 +3,7 @@ import UsersInfo from '../Images/Users Info.png'
 import StudentDetails from '../Images/Student Details.png';
 import Dismefa from '../Images/Dismefa.png'
 import FoodDelivery from '../Images/Food Delivery App.png'
-import webStreaming from '../Images/web streaming.png'
+import webStreaming from '../Images/webStreaming.png'
 
 export let i = 1;
 
