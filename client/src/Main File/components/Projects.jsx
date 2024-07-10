@@ -10,7 +10,7 @@ function Projects(){
     <div className='flex flex-wrap'>
       {object.map((value) =>(
         <Link key={i} to={value.Link} id={value.id} className="m-5 hover:scale-110 duration-300">
-          <div className="bg-white text-red-600 w-[20rem] h-[24rem] px-5 py-5 flex flex-col items-center rounded-lg shadow-2xl hover:shadow-blue-600 active:shadow-green-600">
+          <div className="bg-white text-red-600 w-[20rem] h-[24rem] px-5 py-5 flex flex-col items-center justify-between rounded-lg shadow-2xl hover:shadow-blue-600 active:shadow-green-600">
             <h1 className="text-6xl mb-4">Project {i++}</h1>
             <img src={value.Img} className={`object-contain rounded-sm`}></img>
             <p className="flex flex-col items-center mt-2 pt-2 border-t-2 border-blue-600">

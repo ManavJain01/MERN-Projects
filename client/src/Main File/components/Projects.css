@@ -1,12 +1,3 @@
-#project1 div, #project2 div, #project3 div{
-  justify-content: space-between;
-}
-
-#project4 p span, #project5 p span{
+#project5 p span, #project6 p span, #project4 p span{
   padding: 0 10px;
-}
-
-#project5 img{
-  height: 100%;
-  width: 100%;
 }

@@ -4,6 +4,7 @@ import StudentDetails from '../Images/Student Details.png';
 import Dismefa from '../Images/Dismefa.png'
 import FoodDelivery from '../Images/Food Delivery App.png'
 import webStreaming from '../Images/webStreaming.png'
+import NextAuth from'../Images/NextAuth.png'
 
 export let i = 1;
 
@@ -28,6 +29,13 @@ const object = [
     Img: webStreaming,
     p1:"My Major MERN Project",
     p2:"Web Streaming",
+    id:`project${i++}`
+  },
+  {
+    Link:"",
+    Img: NextAuth,
+    p1:"My First NextJS, Typescript Project",
+    p2:"Next Auth",
     id:`project${i++}`
   },
   //Minor Projects
