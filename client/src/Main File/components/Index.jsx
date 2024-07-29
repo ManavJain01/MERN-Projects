@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom'
 
 function Index(){
   return (
-    <div>
+    <div className="font-serif">
       <Header />
       <Outlet />
       <Footer />
